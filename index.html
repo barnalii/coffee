@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <div class="header">
+        <a href="#"><img src="images/logo.jpg" class="logo">Coffee Me</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="bi bi-x-lg"></i></a>
+
+            </ul>
+        </div>
+        <div class="icons">
+            <div class="search-form">
+              <input type="search" id="search-box"   placeholder="Search your favourite Coffee......">
+            </div>       
+              <button onclick="searchFruit()">Search</button>
+            
+            <a href="card.html"><i class="bi bi-bag"></i></a>
+            <i class="bi bi-list" id="menu"></i>
+            <div id="result-container">
+                <div class="result-content">
+                    <div class="fruit-image-container">
+                        <img class="fruit-image" src="" alt="Fruit Image">
+                    </div>
+                    <div class="separator"></div>
+                    <div class="fruit-details">
+                        <div class="fruit-name">Fruit Name</div>
+                        <div class="fruit-description">Fruit Description</div>
+                        <div class="advantages">Advantages</div>
+                        <ul class="advantages-list">
+                            <li class="advantages-item">Advantage 1</li>
+                            <li class="advantages-item">Advantage 2</li>
+                            <li class="advantages-item">Advantage 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <div class="hero">
+        
+        <h1>FRESH COFFEE IN </h1>
+        <h1>THE MORNING</h1>
+        <p>Coffee also contains antioxidants and other active substances <br>
+            that may reduce internal inflammation
+            <br> and protect against disease</p>
+        <button>GET IT NOW</button>
+    </div>
+
+
+    <!--<script>
+        const fruitData = {
+            apple: {
+                name: "Apple",
+                description: "Apples are delicious and healthy fruits. They are rich in fiber, vitamins, and minerals, making them an excellent choice for a nutritious snack.",
+                advantages: [
+                    "High in antioxidants",
+                    "Promotes heart health",
+                    "Supports weight loss",
+                    "Boosts immune system",
+                ],
+                image: "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            },
+            mango: {
+                name: "Mango",
+                description: "Mangoes are tropical fruits known for their sweet taste and juicy flesh. They are packed with vitamins, minerals, and antioxidants, providing numerous health benefits.",
+                advantages: [
+                    "Rich in vitamin C",
+                    "Improves digestion",
+                    "Boosts eye health",
+                    "Enhances skin health",
+                ],
+                image: "https://images.unsplash.com/photo-1623930376395-0f3ad22cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            },
+            orange: {
+                name: "Orange",
+                description: "Oranges are citrus fruits with a rich source of vitamin C. They are not only delicious but also provide essential nutrients that support overall health.",
+                advantages: [
+                    "High in vitamin C",
+                    "Boosts immune system",
+                    "Aids in digestion",
+                    "Supports heart health",
+                ],
+                image: "https://images.unsplash.com/photo-1547514701-42782101795e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+            },
+        };
+
+        function searchFruit() {
+            const searchBox = document.getElementById('search-box');
+            const fruitName = searchBox.value.toLowerCase().trim();
+
+            if (fruitData.hasOwnProperty(fruitName)) {
+                const resultContainer = document.getElementById('result-container');
+                const fruit = fruitData[fruitName];
+
+                const fruitContent = `
+                    <img src="${fruit.image}" alt="${fruit.name}" class="fruit-image">
+                    <div class="fruit-name">${fruit.name}</div>
+                    <div class="fruit-description">${fruit.description}</div>
+                    <div class="advantages">Advantages of ${fruit.name}:</div>
+                    <ul class="advantages-list">
+                        ${fruit.advantages.map(advantage => `<li class="advantages-item">${advantage}</li>`).join('')}
+                    </ul>
+                `;
+
+                resultContainer.innerHTML = fruitContent;
+                resultContainer.style.display = 'block';
+            } else {
+                alert("Fruit not found. Please enter apple, mango, or orange.");
+            }
+        }
+
+        
+    function searchOnEnter(event) {
+            if (event.keyCode === 13) {
+                searchFruit();
+            }
+        }
+    </script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>    
